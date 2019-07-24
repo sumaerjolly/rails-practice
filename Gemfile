@@ -36,7 +36,6 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-gem 'better_errors', '~> 2.5', '>= 2.5.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -53,7 +52,10 @@ group :development do
 
   gem 'guard', '~> 2.15'
 
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2' , require: false
+
+  gem 'better_errors', '~> 2.5', '>= 2.5.1'
+
 end
 
 group :test do
